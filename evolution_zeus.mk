@@ -14,6 +14,9 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
+# Inherit from ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 PRODUCT_NAME := evolution_zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
