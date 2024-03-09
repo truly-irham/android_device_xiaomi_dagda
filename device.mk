@@ -13,7 +13,6 @@ $(call inherit-product, vendor/xiaomi/zeus/zeus-vendor.mk)
 # Overlay
 PRODUCT_PACKAGES += \
    	ApertureResZeus \
-		CarrierConfigResZeus \
 		FaceUnlockServiceOverlay \
     FrameworksResZeus \
 		PixelSetupWizardResZeus \
