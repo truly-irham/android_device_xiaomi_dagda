@@ -1,9 +1,6 @@
 # Xiaomi
 ro.product.mod_device=zeus_global
 
-# Force VoLTE calling
-persist.dbg.volte_avail_ovr=1
-
 # Force VoNR calling
 persist.radio.is_vonr_enabled_0=true
 persist.radio.is_vonr_enabled_1=true
