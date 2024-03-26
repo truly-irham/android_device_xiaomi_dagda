@@ -8,7 +8,6 @@
 $(call inherit-product, device/xiaomi/zeus/device.mk)
 
 # Inherit from common Evolution X configuration
-TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Miui Camera for zeus
