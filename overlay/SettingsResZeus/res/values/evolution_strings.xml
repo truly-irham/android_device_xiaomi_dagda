@@ -7,6 +7,5 @@
     <!-- About device screen, build maintainer -->
     <string name="build_device_url">https://t.me/Xiaomi12ProOfficial</string>
     <string name="build_maintainer_summary">rpi_luver</string>
-    <string name="build_maintainer_donate_url">https://paypal.me/trulyirham</string>
 </resources>
 
