@@ -10,16 +10,16 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/zeus/zeus-vendor.mk)
 
-# Overlay
+# Overlays
 PRODUCT_PACKAGES += \
-   	ApertureResZeus \
-		FaceUnlockServiceOverlay \
     FrameworksResZeus \
-		PixelSetupWizardResZeus \
     SettingsProviderResZeus \
     SettingsResZeus \
     SystemUIResZeus \
     WifiResZeus 
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-derp
 
 # Sensors
 PRODUCT_PACKAGES += \

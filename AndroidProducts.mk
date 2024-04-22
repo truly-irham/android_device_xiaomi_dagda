@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_zeus.mk
+    $(LOCAL_DIR)/derp_zeus.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_zeus-user \
-    evolution_zeus-userdebug \
-    evolution_zeus-eng
+    derp_zeus-user \
+    derp_zeus-userdebug \
+    derp_zeus-eng
