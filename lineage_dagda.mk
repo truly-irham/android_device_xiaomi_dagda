@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
+# Inherit from Basic Call Recorder (BCR)
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 PRODUCT_NAME := lineage_dagda
 PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
