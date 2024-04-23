@@ -11,10 +11,7 @@ $(call inherit-product, device/xiaomi/zeus/device.mk)
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 DERP_BUILDTYPE := Unofficial
 EXTRA_UDFPS_ICONS := true
-EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_PICO_GAPPS := true
-TARGET_INCLUDES_MIUI_CAMERA := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Miui Camera for zeus
