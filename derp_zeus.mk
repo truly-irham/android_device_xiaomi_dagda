@@ -17,6 +17,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
+# Inherit from Basic Call Recorder (BCR)
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 PRODUCT_NAME := derp_zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
