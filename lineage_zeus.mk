@@ -17,6 +17,9 @@ $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 # Inherit from ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Inherit from Basic Call Recorder (BCR)
+$(call inherit-product, vendor/bcr/bcr.mk)
+
 PRODUCT_NAME := lineage_zeus
 
 PRODUCT_DEVICE := zeus
