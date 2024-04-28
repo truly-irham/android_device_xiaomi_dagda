@@ -20,14 +20,22 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit from Basic Call Recorder (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-# Matrixx flags
-MATRIXX_BUILD_TYPE := Unofficial
-MATRIXX_MAINTAINER := "rpi_luver (@truly_irham)"
-MATRIXX_CHIPSET := SM8450
-MATRIXX_BATTERY := 4600mAh
-MATRIXX_DISPLAY := 1440x3200
+# RisingOS flags
+RISING_CHIPSET := SM8450
+RISING_MAINTAINER := "rpi_luver (@truly_irham)"
+RISING_BUILDTYPE := UNOFFICIAL
+TARGET_HAS_UDFPS := true
 WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_CORE_GMS_EXTRAS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_PACKAGES += \
+	Photos \
+	AiWallpapers
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_zeus

@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
     WifiResZeus
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-matrixx
+    $(LOCAL_PATH)/overlay-rising
 
 # Sensors
 PRODUCT_PACKAGES += \
