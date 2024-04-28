@@ -20,8 +20,19 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit from Basic Call Recorder (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-PRODUCT_NAME := lineage_zeus
+# Matrixx flags
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := rpi_luver
+MATRIXX_CHIPSET := SM8450
+MATRIXX_BATTERY := 4600mAh
+MATRIXX_DISPLAY := 1440x3200
+WITH_GMS := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDES_MIUI_CAMERA := true
+TARGET_HAS_UDFPS := true
 
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := lineage_zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
