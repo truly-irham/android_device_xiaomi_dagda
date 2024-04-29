@@ -13,9 +13,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Menu option for not validating the EAP server -->
-    <string name="wifi_do_not_validate_eap_server">Do not validate</string>
-    <!-- Warning message displayed if user choses not to validate the EAP server -->
-    <string name="wifi_do_not_validate_eap_server_warning">No certificate specified. Your connection will not be private.</string>
+  <!-- Battery Health -->
+  <bool name="config_supportBatteryHealth">true</bool>
+  <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/battery/charge_full</string>
+  <string name="config_batteryDesignCapacity">/sys/class/power_supply/battery/charge_full_design</string>
+  <string name="config_batteryChargeCycles">/sys/class/power_supply/battery/cycle_count</string>
+
 </resources>

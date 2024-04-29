@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2023 The Android Open Source Project
 # Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -7,12 +8,8 @@
 # Inherit from zeus device
 $(call inherit-product, device/xiaomi/zeus/device.mk)
 
-# Inherit from common DerpFest stuff
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-DERP_BUILDTYPE := Unofficial
-EXTRA_UDFPS_ICONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit from common CherishOS stuff
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Miui Camera for zeus
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
@@ -24,7 +21,22 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit from Basic Call Recorder (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-PRODUCT_NAME := derp_zeus
+# CherishOS build flags
+CHERISH_BUILD_TYPE=UNOFFICIAL
+WITH_GMS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+EXTRA_UDFPS_ANIMATIONS := true
+
+# CherishOS props 
+CHERISH_CHIPSET := SM8450
+CHERISH_BATTERY := 4600mAh
+CHERISH_DISPLAY := 1440x3200
+
+# Device identifier
+PRODUCT_NAME := cherish_zeus 
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

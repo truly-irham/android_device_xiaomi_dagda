@@ -5,8 +5,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- URL to be checked for OTA updates -->
-  <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/truly-irham/derpfest-ota/master/zeus.json</string>
+  <string name="updater_server_url" translatable="false">https://raw.githubusercontent.com/truly-irham/cherish-ota/master/zeus.json</string>
 
   <!-- URL to changelog -->
-  <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/truly-irham/derpfest-ota/master/changelog_zeus.txt</string>
+  <string name="menu_changelog_url" translatable="false">https://raw.githubusercontent.com/truly-irham/cherish-ota/master/changelog_zeus.txt</string>
 </resources>

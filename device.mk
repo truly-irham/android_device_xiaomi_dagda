@@ -19,7 +19,7 @@ PRODUCT_PACKAGES += \
     WifiResZeus 
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-derp
+    $(LOCAL_PATH)/overlay-cherish
 
 # Sensors
 PRODUCT_PACKAGES += \
