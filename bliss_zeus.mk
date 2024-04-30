@@ -7,8 +7,8 @@
 # Inherit from zeus device
 $(call inherit-product, device/xiaomi/zeus/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common BlissRoms configuration
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Miui Camera for zeus
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
@@ -20,7 +20,13 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit from Basic Call Recorder (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-PRODUCT_NAME := lineage_zeus
+PRODUCT_NAME := bliss_zeus
+
+# BlissRoms build flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+BLISS_BUILDTYPE := UNOFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
