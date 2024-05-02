@@ -7,14 +7,17 @@
 # Inherit from zeus device
 $(call inherit-product, device/xiaomi/zeus/device.mk)
 
-# Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from common DerpFest stuff
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+DERP_BUILDTYPE := Unofficial
+EXTRA_UDFPS_ICONS := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Miui Camera for zeus
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
-PRODUCT_NAME := lineage_zeus
+PRODUCT_NAME := derp_zeus
 PRODUCT_DEVICE := zeus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
