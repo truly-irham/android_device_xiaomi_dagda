@@ -13,8 +13,8 @@ BLAZE_BUILD_TYPE := UNOFFICIAL
 BLAZE_MAINTAINER := rpi_luver
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_UDFPS_ANIMATIONS := true
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+# TARGET_GAPPS_ARCH := arm64
+# WITH_GAPPS := true
 
 # Miui Camera for zeus
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
