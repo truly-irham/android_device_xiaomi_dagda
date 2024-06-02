@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_zeus.mk
+    $(LOCAL_DIR)/derp_dagda.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_zeus-user \
-    derp_zeus-userdebug \
-    derp_zeus-eng
+    derp_dagda-user \
+    derp_dagda-userdebug \
+    derp_dagda-eng

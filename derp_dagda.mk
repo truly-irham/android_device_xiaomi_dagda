@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from zeus device
-$(call inherit-product, device/xiaomi/zeus/device.mk)
+# Inherit from dagda device
+$(call inherit-product, device/xiaomi/dagda/device.mk)
 
 # Inherit from common DerpFest stuff
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
@@ -13,15 +13,15 @@ DERP_BUILDTYPE := Unofficial
 EXTRA_UDFPS_ICONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Miui Camera for zeus
+# Miui Camera for dagda/zeus
 $(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
 $(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
 
 # Inherit from Basic Call Recorder (BCR)
 $(call inherit-product, vendor/bcr/bcr.mk)
 
-PRODUCT_NAME := derp_zeus
-PRODUCT_DEVICE := zeus
+PRODUCT_NAME := derp_dagda
+PRODUCT_DEVICE := dagda
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 2201122G

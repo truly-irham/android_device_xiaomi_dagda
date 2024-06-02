@@ -3,7 +3,7 @@ Copyright (C) 2022-2023 The LineageOS Project
 Device configuration for Xiaomi 12 Pro
 =========================================
 
-The Xiaomi 12 Pro (codenamed _"zeus"_) is a high-end smartphone from Xiaomi.
+The Xiaomi 12 Pro (codenamed _"dagda"/"zeus"_) is a high-end smartphone from Xiaomi.
 
 It was globally released in March 2022.
 
