@@ -10,9 +10,9 @@ $(call inherit-product, device/xiaomi/dagda/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Miui Camera for zeus
-$(call inherit-product, device/xiaomi/miuicamera-zeus/device.mk)
-$(call inherit-product, device/xiaomi/miuicamera-zeus/BoardConfig.mk)
+# Miui Camera from cupid
+$(call inherit-product, device/xiaomi/miuicamera-cupid/device.mk)
+$(call inherit-product, device/xiaomi/miuicamera-cupid/BoardConfig.mk)
 
 # Inherit from MindTheGapps
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
